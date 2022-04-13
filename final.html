@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./final.css" type="text/css" />
+    <title>Final Project</title>
+    <script src="./final.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="container2">
+            <img class="profilePic" src="https://i.cbc.ca/1.4842389.1538143978!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_940/bird-watching-binoculars.jpg " 
+            alt="Veronica" >
+            <h2>VERONICA XU </h2>
+            <p>Web Developer</p>
+           
+            <nav>
+                <button class="blackbtn"><a class="blackbtn" href="#info">Resume</a></button>
+                <button class="whitebtn"><a class="whitebtn" href="#contact">Contact Me</a></button>        
+            </nav>  
+        </div>
+    
+        <div class="row">  
+            <div class="main">
+                    <h2 id="me">About Me and Academic Honesty</h2>
+                    <P>My name is Veronica Xu. I am now a full-time student and a full-time mom. I am studying in the school
+                       of Information and Communication Technology at Seneca.</P>
+                       <p>I am an outdoor person. I like to spend as much time as possible outdoors, bird watching, going
+                        biking, hiking and gardening. I also like reading. Reading invites me to its own world. I love
+                        “Alice in Wonderland”.</p>
+                     <p>I am a sport&apos;s fan too. I really enjoy watching different sport games, such as basketball 
+                        and badminton. To me, it is always a treat even if I can only spend a couple of minutes on it. </p>
+                    <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No
+                        part of this assessment has been copied manually or electronically from any other source
+                        (including web sites) except for the information supplied by the WEB222 instructors and / or made
+                        available in this assessment for my use. I also declare that no part of this assignment has been
+                        distributed to other students.</p>  
+            </div>
+           
+           <div class="basic">
+                <h2 id="info">Basic Information</h2>     
+                <table>
+                    <tr>
+                        <td><span>NAME:</span></td>
+                        <td>Veronica Xu</td>
+                    </tr>
+                    <tr>
+                        <td><span>EMAIL:</span></td>
+                        <td>vxu1@myseneca.ca</td>
+                    </tr>
+                    <tr>
+                        <td><span>STUDENT ID:</span> </td>
+                        <td>119652204 </td>
+                    </tr>
+                    <tr>
+                        <td><span>CLASS SECTION:</span> </td>
+                        <td>WEB22NHH</td>
+                    </tr>
+                    <tr>
+                        <td><span>LANGUAGE:</span></td>
+                        <td>English, Mandarin, Cantonese</td>
+                    </tr>
+                </table>       
+             </div>
+        </div>
+
+        <footer>
+            
+            <p class="footer1"><span>Date:</span> April 13, 2022</p>
+            <p class="footer2"><span> INSTRUCTOR:</span> Muath Alzghool</p>     
+        
+        </footer>
+
+         <section class="educate">
+                <h2 class="heading" id="education">EDUCATION</h2>
+                <div class="contents">
+                    <div class="left">
+                        <p>2021-2022(expected)</p>
+                        <p>Ontario College Diploma</p>
+                    </div>
+                    <div class="right">
+                        <p>Ontario College Diploma </p>
+                        <p>SENECA COLLEGE</p>
+                    </div>
+         </section>
+                         
+        <h2 class="heading" id="contact">Contact Me</h2>
+        <form id="form1" action="https://httpbin.org/post" method="post">
+
+           <label for="fname">First Name:</label>
+           <input  type="text" name="fname" id="fname" size="20" placeholder="First name, please" required="required"><br><br>
+
+           <label for="mname">Middle Name:</label>
+           <input  type="text" name="mname" id="mname" size="20" placeholder="Middle name, if exists"><br><br>
+           
+           <label for="lname">Last Name:</label>
+           <input  type="text" name="lname" id="lname" size="20" placeholder="Last name, please" required="required"><br><br>   
+
+           <label for="email">Email:</label> 
+           <input type="email" name="email" id="email" required="required"><br><br>
+           
+           <label for="city">City:</label>
+           <input type="text" name="city" id="city" list="cities" required="required">
+           <datalist id="cities">
+               <option value="Toronto">
+               <option value="Montréal">
+               <option value="Vancouver">	  
+               <option value="Ottawa">	  
+               <option value="Hamilton"> 
+               <option value="Victoria">
+               <option value="TorontoEdmonton">
+               <option value="Edmonton">
+               <option value="Quebéc">
+               <option value="London">                
+           </datalist>
+            <br><br>
+
+           <label for="PostCode">Postal Code</label>    
+           <input type="text" pattern="/^[a-zA-Z][0-9][a-zA-Z]?''[a-zA_Z][0-9][a-zA-Z]$/" id="PostCode" 
+           name="PostCode" size='20' value='' maxlength='15' required="required"> 
+           
+           <h3 class="question">What is this about ?</h3>
+           
+           <div >
+                <label for="hide"></label> 
+                    <input type="radio" id="hide" name="question" value="Question" checked>Question<br><br>
+                    <input type="radio" name="question" id="hiring" value="Hiring">Hiring<br><br>
+                    <input type="radio" name="question" id="comment" value="Comment">Comment<br><br>      
+           </div>
+
+           <div id="Rate" class="formPayRate">
+               <label for="hourlyRate">Hourly Rate ($/hour)</label>
+               <input type="number" id="hourlyRate" name="hourlyRate" size="20" placeholder="Please enter hourly rate">
+           </div>
+
+        <form id="form3" method="post" name="yourComments" action="https://httpbin.org/post">
+                
+           <h3>Comments</h3> 
+              <textarea name="comments" cols="100" rows="8" id="comments"></textarea>
+           <p>
+              <input type="submit" value="Submit" /> &nbsp;&nbsp;
+              <input type="reset"  value="    Clear   "/>  
+           </p>
+        </form>
+            
+    </div>
+    
+  
+</body>
+</html>
+
+    

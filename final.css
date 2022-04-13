@@ -1,0 +1,157 @@
+/* css file */
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.card{
+   display: block; 
+   width: 500px;
+   height: 500px;
+   
+}
+img {
+    margin-top: 30px;
+    width:500px  
+}
+
+nav{
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 2em;
+}
+
+.contents{
+    display: flex;
+    box-shadow: 1rem 1rem 1rem grey;
+}
+
+.contents .left{
+    background-color: #1c2d47;
+    color: white;
+    padding: 4em;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: larger;
+    
+}
+
+.contents .right{
+    padding: 4em;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.educate{
+    margin-bottom: 5em;
+}
+
+.date{
+    display: flex;
+}
+
+.blackbtn{
+    text-decoration: none;
+    background-color: #1c2d47;
+    border-radius: 1em;
+    color: white;
+    padding: 0.5rem;
+}
+.blackbtn:hover{
+    background-color:darkorange;
+    color: black;
+}
+
+.whitebtn{
+    text-decoration: none;
+    background-color: white;
+    border-radius: 1em;
+    color: #1c2d47;
+    padding: 0.5rem;
+}
+
+.whitebtn:hover{
+    color: black;
+}
+
+.profilePic{
+    border-radius: 3em;
+}
+
+.container2{
+    background-color:#e6eaf0;
+    text-align: center;
+    display: block; 
+    
+}
+
+
+.row {
+    width:1000px;
+    display: flex;
+    border-bottom-left-radius: 0.8rem;
+    box-shadow: 1rem 1rem 1rem gray;
+}
+
+.main{
+    float:left;
+    width: 640px;
+    padding-bottom:10px;
+    margin-right: 30px;
+    
+}
+
+span {
+   font-weight:bold;}
+
+.basic {
+       float:left;
+       display: inline-block;
+       width: 400px;
+       
+   }
+
+
+ .nav {
+   background-color: lightblue; 
+   list-style-type: none;
+   text-align:left;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ .nav li {
+   display: inline-block;
+   font-size: 20px;
+   padding: 10px;
+ }
+
+footer {
+    display: flex;
+    padding: 1em;
+    background-color:#e6eaf0 ;
+}
+  
+.footer1 {
+    float: left;
+    width:200px;
+    margin-right: 400px;
+}
+
+.footer2 {
+    float:left;
+    width:300px;
+
+}
+ 
+form {
+    border: 5px solid #e6eaf0;
+    padding: 2em;
+}
+
+.formPayRate{
+    visibility: hidden;
+}
